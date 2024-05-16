@@ -1,8 +1,7 @@
-# -*- coding: utf-8 -*-
 
 !pip install pyspark
 
-!git clone https://github.com/Moksha97/big_data_dataset/
+!git clone https://github.com/paavansaireddy/MultiDiseasePrediction
 
 import numpy as npy
 import pandas as pnd
@@ -23,7 +22,7 @@ spark = SparkSession.builder \
     .appName("CSV Read and Split") \
     .getOrCreate()
 
-df = pnd.read_csv("/content/big_data_dataset/Blood_samples_dataset_balanced_2(f).csv")
+df = pnd.read_csv("/content/MultiDiseasePrediction/MultDiseaseDB/Blood_samples_dataset_balanced_2(f).csv")
 
 print(df.shape)
 
